@@ -18,7 +18,7 @@ $arr_surface = [
 ];
 
 
-$min_side = min($arr_surface);
+$min_surface = min($arr_surface);
 
 $total_paper +=  $arr_surface[0] + $arr_surface[1] + $arr_surface[2] + $min_side;
     
