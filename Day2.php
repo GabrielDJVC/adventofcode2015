@@ -11,16 +11,15 @@ foreach ($arr_payload as $key => $value) {
 
 list($l,$w,$h) = explode('x', $value);
 
-$arr_surface = [
+$arr_area = [
     0 => 2*$l*$w,
     1 => 2*$w*$h,
     2 => 2*$h*$l,
 ];
 
+$min_area = min($arr_area);
 
-$min_surface = min($arr_surface);
-
-$total_paper +=  $arr_surface[0] + $arr_surface[1] + $arr_surface[2] + $min_side;
+$total_paper +=  $arr_area[0] + $arr_area[1] + $arr_area[2] + $min_area;
     
 }
 
