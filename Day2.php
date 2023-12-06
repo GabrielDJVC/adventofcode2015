@@ -16,7 +16,7 @@ $arr_area = [
     2 => 2 * $h * $l,
 ];
 
-$min_area = min($arr_area);
+$min_area = min($arr_area) / 2;
 
 $total_paper +=  $arr_area[0] + $arr_area[1] + $arr_area[2] + $min_area;
     
